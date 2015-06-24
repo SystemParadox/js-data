@@ -275,7 +275,7 @@ export default function defineResource(definition) {
 
     // Proxy DS methods with shorthand ones
     let fns = ['registerAdapter', 'getAdapter', 'is'];
-    for (var key in _this) {
+    for (let key in _this) {
       if (typeof _this[key] === 'function') {
         fns.push(key);
       }
